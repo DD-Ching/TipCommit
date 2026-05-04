@@ -23,13 +23,13 @@
 - `git` 2.50.1 — available
 - `gh` 2.89.1 — authenticated as `DD-Ching`
 - `python3` 3.10.12 — available
-- **Python single-cell stack: NOT YET INSTALLED.**
-  - `scanpy` — required for v0 MVP
-  - `cellxgene-census` — required for Census query
-  - `anndata` — required for in-memory representation
-  - Install pending; will be done at the start of MVP
-    implementation, not earlier (per "no dependency unless it
-    clearly reduces total complexity" — install when needed).
+- **Python single-cell stack: INSTALLED 2026-05-04.**
+  - `cellxgene-census` 1.17.0
+  - `scanpy` 1.11.5
+  - `anndata` 0.11.4
+  - Plus transitive deps (numpy, pandas, scipy, tiledbsoma, pyarrow).
+  - Install command used: `python3 -m pip install cellxgene-census scanpy anndata`
+    (into the existing miniforge base env; no venv).
 
 This is a **deliberate dep-add** vs Gain's stdlib-only constraint —
 acknowledged in `notes/next_project_decision.md`. The new scope
@@ -41,15 +41,21 @@ deps, e.g., numpy, pandas, scipy).
 
 ```
 notes/
-  evidence_map.md     project goal, Q1 scope, substrate, MVP outline
-  status.md           this file
-  next_steps.md       ordered actions with exit conditions
-metadata/             (empty; will receive Census query results, MVP CSVs)
-scripts/              (empty; will receive Q1 MVP script)
+  evidence_map.md           project goal, Q1 scope, substrate, MVP outline
+  status.md                 this file
+  next_steps.md             ordered actions with exit conditions
+  he2022_census_inventory.md  step-2 inventory result (substrate locked)
+metadata/
+  census_lung_datasets.csv         all lung-mentioning Census datasets
+  census_fetal_lung_per_stage.csv  per-(dataset, stage) cell counts
+  census_fetal_lung_celltypes.csv  cell-type distribution in chosen dataset
+scripts/
+  tipcommit_census_inventory.py    Step 2 inventory script
 ```
 
-That's it. No code, no dependency manifest, no CI. Those land when
-there is a concrete reason for them.
+Step 2 (Census inventory) is **complete**. Step 3 (Q1 MVP design)
+and Step 4 (MVP implementation) are the next deliverables, per
+`notes/next_steps.md`.
 
 ## What is decided
 
