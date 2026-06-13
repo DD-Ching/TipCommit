@@ -1,0 +1,14 @@
+substrate,stage,n_total_epithelial,n_pool,n_donors_any_cell,n_donors_geq5pct_share,dominant_donor_share,is_single_donor_dominant,n_pool_donors_any_cell,n_pool_donors_geq5pct_share
+he2022,9th week post-fertilization stage,1799,1378,1,1,1.0,True,1,1
+he2022,11th week post-fertilization stage,2043,1409,1,1,1.0,True,1,1
+he2022,15th week post-fertilization stage,1921,1418,2,2,0.889,False,2,1
+he2022,18th week post-fertilization stage,1812,1254,2,1,0.957,True,2,1
+he2022,20th week post-fertilization stage,856,70,2,2,0.617,False,2,2
+he2022,22nd week post-fertilization stage,1086,66,2,2,0.828,False,2,1
+he2022,Carnegie stage 19,375,168,1,1,1.0,True,1,1
+he2022,Carnegie stage 16,405,180,1,1,1.0,True,1,1
+cao2020,12th week post-fertilization stage,2706,2688,1,1,1.0,True,1,1
+cao2020,13th week post-fertilization stage,706,688,1,1,1.0,True,1,1
+cao2020,15th week post-fertilization stage,8171,7910,2,2,0.88,False,2,2
+cao2020,16th week post-fertilization stage,3495,3393,3,3,0.491,False,3,3
+cao2020,17th week post-fertilization stage,10460,10130,4,4,0.332,False,4,4
